@@ -27,3 +27,18 @@ def generate_prime_factors(num):
     return factors
 
 
+# User Interface
+user_input = input('Please enter an integer to be factored into primes: ').strip()
+
+while True:
+    try:
+        value = int(user_input)
+        print(generate_prime_factors(value))
+        break
+
+    except ValueError:
+        user_input = input('Invalid input.\n'
+                           'Please enter an integer to be factored into primes: ').strip()
+
+
+
