@@ -26,3 +26,4 @@ def generate_prime_factors(num):
         divisor +=1
     return factors
 
+

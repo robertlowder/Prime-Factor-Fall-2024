@@ -41,3 +41,8 @@ def test_input_7():
     # check that the list [4] is returned if
     # generate_prime_factors is called with a 3
     assert prime.generate_prime_factors(8) == [2,2,2]
+
+def test_input_9():
+    # check that the list [4] is returned if
+    # generate_prime_factors is called with a 3
+    assert prime.generate_prime_factors(9) == [3,3]
