@@ -2,7 +2,6 @@
 prime.py -- Write the application code here
 """
 
-
 def generate_prime_factors(num):
 
     # if function is sent anything other than an integer, raise ValueError message
@@ -12,3 +11,7 @@ def generate_prime_factors(num):
     # if function is sent a 1 return an empty List
     if num == 1:
         return []
+
+    # if function is sent a 2 return list [2]
+    if num == 2:
+        return [2]
