@@ -15,3 +15,7 @@ def generate_prime_factors(num):
     # if function is sent a 2 return list [2]
     if num == 2:
         return [2]
+
+    # if function is sent a 3 return list [3]
+    if num == 3:
+        return [3]

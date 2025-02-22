@@ -22,3 +22,8 @@ def test_input_2():
     # check that the list [2] is returned if
     # generate_prime_factors is called with a 2
     assert prime.generate_prime_factors(2) == [2]
+
+def test_input_3():
+    # check that the list [3] is returned if
+    # generate_prime_factors is called with a 3
+    assert prime.generate_prime_factors(3) == [3]
