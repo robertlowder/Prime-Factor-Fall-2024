@@ -9,13 +9,20 @@ def generate_prime_factors(num):
         raise ValueError('Input must be an integer.')
 
     # if function is sent a 1 return an empty List
-    if num == 1:
+    if num < 2:
         return []
 
-    # if function is sent a 2 return list [2]
-    if num == 2:
-        return [2]
 
-    # if function is sent a 3 return list [3]
-    if num == 3:
-        return [3]
+    # if function is sent a number 2 or greater it will run this algorithm to
+    # break it down into its prime factors and append each one to a list until
+    # there are no more left and then return the factored list
+    factors = []
+    divisor = 2
+
+    while num >= divisor:
+        while num % divisor == 0:
+            factors.append(divisor)
+            num //= divisor
+        divisor +=1
+    return factors
+
